@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glowing Login & Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box login-box" id="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="input-box">
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" id="login-password" required />
+          <label>Password</label>
+        </div>
+        <div class="show-password">
+          <input type="checkbox" id="show-login-password" /> Show Password
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="switch">Don’t have an account? <a href="#" id="to-register">Register</a></p>
+      </form>
+    </div>
+
+    <div class="form-box register-box" id="register-box">
+      <h2>Register</h2>
+      <form>
+        <div class="input-box">
+          <input type="text" required />
+          <label>Full Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" id="register-password" required />
+          <label>Password</label>
+        </div>
+        <div class="show-password">
+          <input type="checkbox" id="show-register-password" /> Show Password
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <p class="switch">Already have an account? <a href="#" id="to-login">Login</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
